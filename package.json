@@ -1,0 +1,36 @@
+{
+  "name": "projetoFinal",
+  "version": "1.0.0",
+  "description": "Projeto Final de Programacao Web",
+  "main": "server.ts",
+  "author": "ken matsumoto",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "jest --runInBand",
+    "dev": "tsc && tsnd --respawn --transpile-only --poll --no-notify source/server.ts",
+    "scripts": "ts-node -T source/scripts.ts",
+    "queries": "tsnd --respawn --transpileOnly --poll --no-notify source/runQueries.ts",
+    "compile": "tsc && copyfiles -u 1 source/resources/*.mustache source/services/mailer/images/*.png source/services/mailer/*.mst build",
+    "build": "tsc && sucrase ./source -d ./build --transforms typescript,imports",
+    "transpile": "sucrase ./source -d ./build --transforms typescript,imports;",
+    "start": "sucrase ./source -d ./build --transforms typescript,imports && node build/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mustache": "^4.2.0",
+    "sucrase": "^3.20.3",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.2",
+    "@types/puppeteer": "^5.4.5",
+    "@types/typescript": "^2.0.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}
