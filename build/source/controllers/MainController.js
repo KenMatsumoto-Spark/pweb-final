@@ -88,7 +88,6 @@ MainController.get('/courses/:course', (request, response) => __awaiter(void 0, 
     const { course } = request.params;
     try {
         const courseInfo = courses_1.courses.find((c) => c.url === course);
-        console.log({ courseInfo });
         if (!courseInfo)
             throw new Error('Curso não encontrado.');
         const professorsInfo = [];
@@ -99,7 +98,6 @@ MainController.get('/courses/:course', (request, response) => __awaiter(void 0, 
         return response.send(outPut);
     }
     catch (error) {
-        console.log({ error });
         return response.send(notFoundPage);
     }
 }));

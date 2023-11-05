@@ -9,6 +9,8 @@ import { courses } from '../data/courses'
 import { coursesBody } from '../views/public/bodies/coursesBody'
 import { professors } from '../data/professors'
 import { allCoursesBody } from '../views/public/bodies/allCoursesBody'
+import { professorsBody } from '../views/public/bodies/professorsBody'
+import { buildingBody } from '../views/public/bodies/buildingBody'
 const MainController = Router()
 
 const newsInOrder = news.reverse()
@@ -42,7 +44,6 @@ MainController.get('/afatec', async (request: Request, response: Response) => {
   try {
     const outPut = mustache.render(commomSections.buildPage(afatecBody))
     return response.send(outPut)
-    return response.render("public/home/index.html")
   } catch (error) {
     return response.send(notFoundPage)
   }
@@ -57,22 +58,26 @@ MainController.get('/courses', async (request: Request, response: Response) => {
       }
     }, courses})
     return response.send(outPut)
-    return response.render("public/home/index.html")
   } catch (error) {
     return response.send(notFoundPage)
   }
 })
 
-MainController.get('/coursesx', async (request: Request, response: Response) => {
+MainController.get('/professors', async (request: Request, response: Response) => {
   try {
 
-    const outPut = mustache.render(commomSections.buildPage(allCoursesBody), {"limitLength" : function() {
-      return function(text, render) {
-        return render(text).substr(0,200) + '...';
-      }
-    }, courses})
-    // return response.send(outPut)
-    return response.render("/public/home/index.html")
+    const outPut = mustache.render(commomSections.buildPage(professorsBody), {professors})
+    return response.send(outPut)
+  } catch (error) {
+    return response.send(notFoundPage)
+  }
+})
+
+MainController.get('/building', async (request: Request, response: Response) => {
+  try {
+
+    const outPut = mustache.render(commomSections.buildPage(buildingBody))
+    return response.send(outPut)
   } catch (error) {
     return response.send(notFoundPage)
   }
@@ -83,7 +88,6 @@ MainController.get('/courses/:course', async (request: Request, response: Respon
   try {
 
     const courseInfo = courses.find((c) => c.url === course)
-    console.log({courseInfo})
     if(!courseInfo) throw new Error('Curso não encontrado.')
 
     const professorsInfo = []
@@ -94,10 +98,10 @@ MainController.get('/courses/:course', async (request: Request, response: Respon
     const outPut = mustache.render(commomSections.buildPage(coursesBody),{ ...courseInfo, professorsInfo })
     return response.send(outPut)
   } catch (error) {
-    console.log({error})
     return response.send(notFoundPage)
   }
 })
+
 
 
 export default MainController

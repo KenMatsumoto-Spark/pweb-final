@@ -915,19 +915,19 @@ const navBar = `    <section id="topbar" class="d-flex align-items-center">
 
   <nav id="navbar" class="navbar">
     <ul>
-      <li class="dropdown"><a href="#"><span>A FATEC</span> <i class="bi bi-chevron-down"></i></a>
+      <li class="dropdown"><a href="/afatec"><span>A FATEC</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
           <li><a href="/afatec"><span class="bi bi-house"> A Fatec Sorocaba</span></a></li>
-          <li><a href="#"><span class="bi bi-building"> Campus | Como Chegar</span></a></li>
-          <li><a href="#"><span class="bi bi-person-badge"> Congregação</span></a></li>
-          <li><a href="#"><span class="bi bi-mortarboard"> Corpo Docente</span></a></li>
-          <li><a href="#"><span class="bi bi-calendar2-check"> Eventos e Certificados</span></a></li>
-          <li><a href="#"><span class="bi bi-pie-chart"> Núcleos de Pesquisa</span></a></li>
-          <li><a href="#"><span class="bi bi-pen"> Concurso, Processo Seletivo e Oferecimento</span></a></li>
-          <li><a href="#"><span class="bi bi-graph-up"> CPA</span></a></li>
-          <li><a href="#"><span class="bi bi-person-fill-exclamation"> CIPA</span></a></li>
-          <li><a href="#"><span class="bi bi-lightning"> CICE</span></a></li>
-          <li><a href="#"><span class="bi bi-chat-text"> Fale Conosco</span></a></li>
+          <li><a href="/building"><span class="bi bi-building"> Campus | Como Chegar</span></a></li>
+          <li><a href="/building"><span class="bi bi-person-badge"> Congregação</span></a></li>
+          <li><a href="/professors"><span class="bi bi-mortarboard"> Corpo Docente</span></a></li>
+          <li><a href="/building"><span class="bi bi-calendar2-check"> Eventos e Certificados</span></a></li>
+          <li><a href="/building"><span class="bi bi-pie-chart"> Núcleos de Pesquisa</span></a></li>
+          <li><a href="/building"><span class="bi bi-pen"> Concurso, Processo Seletivo e Oferecimento</span></a></li>
+          <li><a href="/building"><span class="bi bi-graph-up"> CPA</span></a></li>
+          <li><a href="/building"><span class="bi bi-person-fill-exclamation"> CIPA</span></a></li>
+          <li><a href="/building"><span class="bi bi-lightning"> CICE</span></a></li>
+          <li><a href="/building"><span class="bi bi-chat-text"> Fale Conosco</span></a></li>
         </ul>
       </li>
 
@@ -947,44 +947,44 @@ const navBar = `    <section id="topbar" class="d-flex align-items-center">
         </ul>
       </li>
 
-      <li class="dropdown"><a href="#"><span>DIRETORIA ACADEMICA</span> <i class="bi bi-chevron-down"></i></a>
+      <li class="dropdown"><a href="/building"><span>DIRETORIA ACADEMICA</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a href="#"><span class="bi bi-info-circle"> SIGA</span></a></li>
-          <li><a href="#"><span class="bi bi-wifi"> Serviços Online</span></a></li>
-          <li><a href="#"><span class="bi bi-clock"> Horário das Aulas</span></a></li>
-          <li><a href="#"><span class="bi bi-building-fill-add"> Rematrícula</span></a></li>
-          <li><a href="#"><span class="bi bi-calendar-week-fill"> Calendario de Aulas</span></a></li>
-          <li><a href="#"><span class="bi bi-pencil"> Vagas Remanescentes</span></a></li>
-          <li><a href="#"><span class="bi bi-bank"> Legislação</span></a></li>
-          <li><a href="#"><span class="bi bi-journal-check"> ENADE</span></a></li>
-          <li><a href="#"><span class="bi bi-diagram-3"> Estruturas Curriculares</span></a></li>
-          <li><a href="#"><span class="bi bi-patch-question"> Perguntas e Respostas</span></a></li>
+          <li><a href="/building"><span class="bi bi-info-circle"> SIGA</span></a></li>
+          <li><a href="/building"><span class="bi bi-wifi"> Serviços Online</span></a></li>
+          <li><a href="/building"><span class="bi bi-clock"> Horário das Aulas</span></a></li>
+          <li><a href="/building"><span class="bi bi-building-fill-add"> Rematrícula</span></a></li>
+          <li><a href="/building"><span class="bi bi-calendar-week-fill"> Calendario de Aulas</span></a></li>
+          <li><a href="/building"><span class="bi bi-pencil"> Vagas Remanescentes</span></a></li>
+          <li><a href="/building"><span class="bi bi-bank"> Legislação</span></a></li>
+          <li><a href="/building"><span class="bi bi-journal-check"> ENADE</span></a></li>
+          <li><a href="/building"><span class="bi bi-diagram-3"> Estruturas Curriculares</span></a></li>
+          <li><a href="/building"><span class="bi bi-patch-question"> Perguntas e Respostas</span></a></li>
         </ul>
       </li>
       
-      <li class="dropdown"><a href="#"><span>DIRETORIA ADMINISTRATIVA</span> <i class="bi bi-chevron-down"></i></a>
+      <li class="dropdown"><a href="/building"><span>DIRETORIA ADMINISTRATIVA</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a href="#"><span class="bi bi-people"> Recadastramento de Serviços</span></a></li>
-          <li><a href="#"><span class="bi bi-journal-richtext"> Atestado de Rendimento de Servidores</span></a></li>
-          <li><a href="#"><span class="bi bi-person-fill-add"> Cadastramento de Fornecedores</span></a></li>
-          <li><a href="#"><span class="bi bi-car-front-fill"> Cadastramento de Veículos</span></a></li>
-          <li><a href="#"><span class="bi bi-globe-americas"> Programa Mata Nativa</span></a></li>
-          <li><a href="#"><span class="bi bi-envelope-at"> Email @fatec.sp.gov.br</span></a></li>
-          <li><a href="#"><span class="bi bi-envelope-at"> Email @fatecsorocaba.edu.br</span></a></li>
+          <li><a href="/building"><span class="bi bi-people"> Recadastramento de Serviços</span></a></li>
+          <li><a href="/building"><span class="bi bi-journal-richtext"> Atestado de Rendimento de Servidores</span></a></li>
+          <li><a href="/building"><span class="bi bi-person-fill-add"> Cadastramento de Fornecedores</span></a></li>
+          <li><a href="/building"><span class="bi bi-car-front-fill"> Cadastramento de Veículos</span></a></li>
+          <li><a href="/building"><span class="bi bi-globe-americas"> Programa Mata Nativa</span></a></li>
+          <li><a href="/building"><span class="bi bi-envelope-at"> Email @fatec.sp.gov.br</span></a></li>
+          <li><a href="/building"><span class="bi bi-envelope-at"> Email @fatecsorocaba.edu.br</span></a></li>
         </ul>
       </li>
-      <li class="dropdown"><a href="#"><span>ALUNOS</span> <i class="bi bi-chevron-down"></i></a>
+      <li class="dropdown"><a href="/building"><span>ALUNOS</span> <i class="bi bi-chevron-down"></i></a>
         <ul>
-          <li><a href="#"><span class="bi bi-info-circle"> SIGA</span></a></li>
-          <li><a href="#"><span class="bi bi-backpack-3"> Monitoria</span></a></li>
-          <li><a href="#"><span class="bi bi-motherboard"> Iniciação Científica</span></a></li>
-          <li><a href="#"><span class="bi bi-mortarboard"> Colação de Grau</span></a></li>
-          <li><a href="#"><span class="bi bi-person-vcard"> Estágio</span></a></li>
-          <li><a href="#"><span class="bi bi-envelope-at"> Email @fatec.sp.gov.br</span></a></li>
-          <li><a href="#"><span class="bi bi-translate"> Idiomas Sem Fronteiras</span></a></li>
-          <li><a href="#"><span class="bi bi-cloud-download"> Downloads</span></a></li>
-          <li><a href="#"><span class="bi bi-book"> Manual de Convivência</span></a></li>
-          <li><a href="#"><span class="bi bi-chat-right-dots"> Comunicação inclusiva CPS</span></a></li>
+          <li><a href="/building"><span class="bi bi-info-circle"> SIGA</span></a></li>
+          <li><a href="/building"><span class="bi bi-backpack-3"> Monitoria</span></a></li>
+          <li><a href="/building"><span class="bi bi-motherboard"> Iniciação Científica</span></a></li>
+          <li><a href="/building"><span class="bi bi-mortarboard"> Colação de Grau</span></a></li>
+          <li><a href="/building"><span class="bi bi-person-vcard"> Estágio</span></a></li>
+          <li><a href="/building"><span class="bi bi-envelope-at"> Email @fatec.sp.gov.br</span></a></li>
+          <li><a href="/building"><span class="bi bi-translate"> Idiomas Sem Fronteiras</span></a></li>
+          <li><a href="/building"><span class="bi bi-cloud-download"> Downloads</span></a></li>
+          <li><a href="/building"><span class="bi bi-book"> Manual de Convivência</span></a></li>
+          <li><a href="/building"><span class="bi bi-chat-right-dots"> Comunicação inclusiva CPS</span></a></li>
         </ul> 
       </li>
 
@@ -1312,19 +1312,19 @@ const footer = `
         <ul>
           <li><i class="bx bx-chevron-right"></i> <a href="/afatec">A Fatec</a></li>
           <li><i class="bx bx-chevron-right"></i> <a href="/courses">Cursos</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Diretoria Academica</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Diretoria Administrativa</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Alunos</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Diretoria Academica</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Diretoria Administrativa</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Alunos</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Buscas Frequentes</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Perguntas e Respostas</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Fale Conosco</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">Email Institucional</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="#">SIGA</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Perguntas e Respostas</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Fale Conosco</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">Email Institucional</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="/building">SIGA</a></li>
         </ul>
       </div>
 

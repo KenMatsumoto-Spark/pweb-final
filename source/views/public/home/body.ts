@@ -5,7 +5,7 @@ export const body = `
     <h1>Seja bem-vindo a Fatec Sorocaba</h1>
     <div class="d-flex align-items-center">
       <i class="bx bxs-right-arrow-alt get-started-icon"></i>
-      <a href="#" class="btn-get-started">mais sobre a instituição</a>
+      <a href="/afatec" class="btn-get-started">mais sobre a instituição</a>
     </div>
   </div>
 
@@ -55,7 +55,7 @@ export const body = `
         <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-newspaper"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Noticias</a></h4>
+            <h4 class="title"><a href="/building" class="stretched-link">Noticias</a></h4>
             <h5 class="description">Novidades e Avisos.</h5>
           </div>
         </div>
@@ -63,7 +63,7 @@ export const body = `
         <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
           <div class="icon-box">
             <div class="icon"><i class="bi bi-book-half"></i></div>
-            <h4 class="title"><a href="" class="stretched-link">Biblioteca</a></h4>
+            <h4 class="title"><a href="/building" class="stretched-link">Biblioteca</a></h4>
             <h5 class="description">Como se cadastrar, renovar e regulamentos.</h5>
           </div>
         </div>

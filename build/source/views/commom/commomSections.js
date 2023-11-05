@@ -422,7 +422,7 @@ h6 {
 #main-first-section {
   width: 100%;
   height: 60vh;
-  background: url("../images/fatec-foto.jfif") center center;
+  background: url("https://guiadovestibulinho.com.br/wp-content/uploads/2021/11/246839_1.jpg") center center;
   background-size: cover;
   position: relative;
   z-index: 1;
