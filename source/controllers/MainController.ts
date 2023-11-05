@@ -72,7 +72,7 @@ MainController.get('/coursesx', async (request: Request, response: Response) => 
       }
     }, courses})
     // return response.send(outPut)
-    return response.render("/view/public/home/index.html")
+    return response.render("/public/home/index.html")
   } catch (error) {
     return response.send(notFoundPage)
   }
