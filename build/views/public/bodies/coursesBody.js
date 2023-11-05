@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.coursesBody = void 0;
-exports.coursesBody = `
+"use strict";Object.defineProperty(exports, "__esModule", {value: true}); const coursesBody = `
 <div class="row">
 
   <div class="col-lg-2"></div>
@@ -67,4 +64,4 @@ exports.coursesBody = `
   <div class="col-lg-2"></div>
 </div>
 
-`;
+`; exports.coursesBody = coursesBody

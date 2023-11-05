@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.body = void 0;
-exports.body = `
+"use strict";Object.defineProperty(exports, "__esModule", {value: true}); const body = `
 <section id="main-first-section" class="d-flex flex-column justify-content-center align-items-center">
 
   <div class="container" data-aos="fade-in">
@@ -75,4 +72,4 @@ exports.body = `
     </div>
   </div>
 </section>
-`;
+`; exports.body = body

@@ -22,6 +22,7 @@ const notFound_1 = require("../views/public/bodies/notFound");
 const courses_1 = require("../data/courses");
 const coursesBody_1 = require("../views/public/bodies/coursesBody");
 const professors_1 = require("../data/professors");
+const allCoursesBody_1 = require("../views/public/bodies/allCoursesBody");
 const MainController = (0, express_1.Router)();
 const newsInOrder = news_1.news.reverse();
 const notFoundPage = mustache_1.default.render(commomSections_1.default.buildPage(notFound_1.notFoundBody), {});
@@ -55,6 +56,20 @@ MainController.get('/afatec', (request, response) => __awaiter(void 0, void 0, v
         return response.send(notFoundPage);
     }
 }));
+MainController.get('/courses', (request, response) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const outPut = mustache_1.default.render(commomSections_1.default.buildPage(allCoursesBody_1.allCoursesBody), { "limitLength": function () {
+                return function (text, render) {
+                    return render(text).substr(0, 200) + '...';
+                };
+            }, courses: courses_1.courses });
+        return response.send(outPut);
+        return response.render("public/home/index.html");
+    }
+    catch (error) {
+        return response.send(notFoundPage);
+    }
+}));
 MainController.get('/courses/:course', (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     const { course } = request.params;
     try {
@@ -68,7 +83,6 @@ MainController.get('/courses/:course', (request, response) => __awaiter(void 0, 
         });
         const outPut = mustache_1.default.render(commomSections_1.default.buildPage(coursesBody_1.coursesBody), Object.assign(Object.assign({}, courseInfo), { professorsInfo }));
         return response.send(outPut);
-        return response.render("public/home/index.html");
     }
     catch (error) {
         console.log({ error });

@@ -1,8 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const buildPage = (body) => {
-    return header.concat(navBar + body + footer);
-};
+"use strict";Object.defineProperty(exports, "__esModule", {value: true});const buildPage = (body) => {
+  return header.concat(navBar + body + footer)
+}
+
 const header = `<!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
@@ -105,7 +104,8 @@ const header = `<!doctype html>
     <link href="../home/navbar-static.css" rel="stylesheet">
     <link href="../home/style.css" rel="stylesheet">
   </head>
-  <body>`;
+  <body>`
+
 const navBar = `    <section id="topbar" class="d-flex align-items-center">
 <div class="container d-flex justify-content-center justify-content-md-between">
   <div class="contact-info d-flex align-items-center">
@@ -201,7 +201,8 @@ const navBar = `    <section id="topbar" class="d-flex align-items-center">
   </nav>
   
 </div>
-</header>`;
+</header>`
+
 const footer = `
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 <script src="../home/main.js"></script>
@@ -248,5 +249,6 @@ const footer = `
   </div>
 </div>
 </footer>
-</html>`;
-exports.default = { header, navBar, footer, buildPage };
+</html>`
+
+exports. default = { header, navBar, footer, buildPage}
