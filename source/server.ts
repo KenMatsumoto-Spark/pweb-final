@@ -3,7 +3,8 @@ import router from './routes'
 
 const app = express()
 app.use(express.static(__dirname + '\\views\\public'))
-app.set('views', __dirname + '/views');
+var path = require ('path');
+app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 
 

@@ -70,6 +70,20 @@ MainController.get('/courses', (request, response) => __awaiter(void 0, void 0, 
         return response.send(notFoundPage);
     }
 }));
+MainController.get('/coursesx', (request, response) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const outPut = mustache_1.default.render(commomSections_1.default.buildPage(allCoursesBody_1.allCoursesBody), { "limitLength": function () {
+                return function (text, render) {
+                    return render(text).substr(0, 200) + '...';
+                };
+            }, courses: courses_1.courses });
+        // return response.send(outPut)
+        return response.render("/public/home/index.html");
+    }
+    catch (error) {
+        return response.send(notFoundPage);
+    }
+}));
 MainController.get('/courses/:course', (request, response) => __awaiter(void 0, void 0, void 0, function* () {
     const { course } = request.params;
     try {

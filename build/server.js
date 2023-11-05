@@ -3,7 +3,8 @@ var _routes = require('./routes'); var _routes2 = _interopRequireDefault(_routes
 
 const app = _express2.default.call(void 0, )
 app.use(_express2.default.static(__dirname + '\\views\\public'))
-app.set('views', __dirname + '/views');
+var path = require ('path');
+app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 
 

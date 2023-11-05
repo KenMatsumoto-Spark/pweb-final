@@ -63,6 +63,21 @@ MainController.get('/courses', async (request, response) => {
   }
 })
 
+MainController.get('/coursesx', async (request, response) => {
+  try {
+
+    const outPut = _mustache2.default.render(_commomSections2.default.buildPage(_allCoursesBody.allCoursesBody), {"limitLength" : function() {
+      return function(text, render) {
+        return render(text).substr(0,200) + '...';
+      }
+    }, courses: _courses.courses})
+    // return response.send(outPut)
+    return response.render("/public/home/index.html")
+  } catch (error) {
+    return response.send(notFoundPage)
+  }
+})
+
 MainController.get('/courses/:course', async (request, response) => {
   const { course } = request.params
   try {
